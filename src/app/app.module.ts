@@ -15,13 +15,17 @@ import {MatMenuModule} from '@angular/material/menu'
 import { AppComponent } from './app.component';
 import { LecturadatosComponent } from './unidad1/lecturadatos/lecturadatos.component';
 import { HomeComponent } from './home/home.component';
+import { UploadComponent } from './shared/upload/upload.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    UploadComponent,
+    LecturadatosComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -37,9 +41,10 @@ import { HomeComponent } from './home/home.component';
       {path: '', component: HomeComponent},
     ]),
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
