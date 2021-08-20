@@ -56,7 +56,9 @@ import { MontecarloComponent } from './montecarlo/montecarlo.component';
       { path: '', component: HomeComponent },
       { path: 'media-mediana-moda', component: MediaMedianaModaComponent },
       { path: 'cuadmedios', component: CuadmediosComponent },
-      { path: 'promediomovil', component: PromediomovilComponent }
+      { path: 'promediomovil', component: PromediomovilComponent },
+      { path: 'suavizamiento', component: SuavizamientoComponent },
+      { path: 'regresionlineal', component: RegresionlinealComponent }
     ]),
     MatDividerModule,
     MatMenuModule,
