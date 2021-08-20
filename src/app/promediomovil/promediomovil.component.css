@@ -1,0 +1,24 @@
+.datos{
+    background-color: #303030;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.titulo{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    color: #303030;
+}
+
+span{
+    font-size: 25px;
+}
+input{
+    font-size: 12px;
+}
+
+.imagenes{
+    padding-left: 30px;
+}

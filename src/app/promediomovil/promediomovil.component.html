@@ -1,0 +1,34 @@
+<div class="titulo"><a>Promedio Movil</a></div>
+<div class="datos">
+    <form (ngSubmit)="onUpload()" [formGroup]="Form">
+        <label>
+            <span>Archivo Datos (.csv, .xlsx)</span>
+            <br>
+            <input class="hidden" type="file" #file accept=".csv, .xlsx" (change)="validar(file.files)"
+                class="inputfile" required>
+        </label>
+        <br>
+        <br>
+        <label>
+            <span>Columna Tiempo</span>
+            <br>
+            <input type="text" formControlName="columnatiempo" required>
+        </label>
+        <br>
+        <br>
+        <label>
+            <span>Columna Datos</span>
+            <br>
+            <input type="text" formControlName="columnadatos" required>
+        </label>
+        <br>
+        <br>
+        <button [disabled]="Form.invalid" type="submit" class="btn btn-success">Calcular</button>
+    </form>
+</div>
+<br>
+<div *ngIf="llegaronDatos">
+    <div class="titulo"><a>Datos analizados</a></div>
+    <br><br>
+    <img class="imagenes" [src]="datosImg" />
+</div>
