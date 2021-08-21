@@ -16,9 +16,16 @@ span{
     font-size: 25px;
 }
 input{
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .imagenes{
     padding-left: 30px;
 }
+select{
+    font-size: 17px;
+}
+table {
+    width: 100%;
+    margin-left: 30px;
+  }

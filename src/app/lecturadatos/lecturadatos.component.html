@@ -3,7 +3,7 @@
     <form (ngSubmit)="onUpload()" [formGroup]="Form">
         <label>
             <span>Archivo Datos (.csv, .xlsx)</span>
-            <br>
+            <br><br>
             <input class="hidden" type="file" #file accept=".csv, .xlsx" (change)="validar(file.files)"
                 class="inputfile" required>
         </label>
@@ -11,15 +11,25 @@
         <br>
         <label>
             <span>Columna X</span>
-            <br>
-            <input type="text" formControlName="columnax" required>
+            <br><br>
+            <select formControlName="columnax" required>
+                <option value="">Selecciona una opción</option>
+                <option *ngFor="let opcion of opciones">
+                    {{opcion}}
+                </option>
+            </select>
         </label>
         <br>
         <br>
         <label>
             <span>Columna Y</span>
-            <br>
-            <input type="text" formControlName="columnay" required>
+            <br><br>
+            <select formControlName="columnay" required>
+                <option value="">Selecciona una opción</option>
+                <option *ngFor="let opcion of opciones">
+                    {{opcion}}
+                </option>
+            </select>
         </label>
         <br>
         <br>

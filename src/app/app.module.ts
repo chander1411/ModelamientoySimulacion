@@ -13,6 +13,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LecturadatosComponent } from './lecturadatos/lecturadatos.component';
@@ -58,13 +59,16 @@ import { MontecarloComponent } from './montecarlo/montecarlo.component';
       { path: 'cuadmedios', component: CuadmediosComponent },
       { path: 'promediomovil', component: PromediomovilComponent },
       { path: 'suavizamiento', component: SuavizamientoComponent },
-      { path: 'regresionlineal', component: RegresionlinealComponent }
+      { path: 'regresionlineal', component: RegresionlinealComponent },
+      { path: 'regresioncuadratica', component: RegresioncuadraticaComponent },
+      { path: 'montecarlo', component: MontecarloComponent },
     ]),
     MatDividerModule,
     MatMenuModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
 
   ],
   providers: [],
