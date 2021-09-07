@@ -1,4 +1,14 @@
 <div class="titulo"><a>Suavizamiento de Datos</a></div>
+<mat-card>
+    <a class="description">La suavización exponencial utiliza un promedio ponderado de valores de series de tiempo
+        pasadas como pronóstico; es un caso especial del método de promedios móviles ponderados
+        en el cual seleccionamos sólo un peso, el peso para la observación más reciente. Los pesos
+        para los demás valores se calculan de forma automática y se vuelven cada vez más pequeños
+        a medida que las observaciones se alejan en el pasado.</a>
+    <br>
+    <a class="description">El siguiente programa utiliza un archivo .csv o .xlsx, se utilizan 2 columnas y un valor alfa
+        para realizar los calculos.</a>
+</mat-card>
 <div class="datos">
     <form (ngSubmit)="onUpload()" [formGroup]="Form">
         <label>

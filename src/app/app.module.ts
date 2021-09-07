@@ -26,6 +26,9 @@ import { SuavizamientoComponent } from './suavizamiento/suavizamiento.component'
 import { RegresionlinealComponent } from './regresionlineal/regresionlineal.component';
 import { RegresioncuadraticaComponent } from './regresioncuadratica/regresioncuadratica.component';
 import { MontecarloComponent } from './montecarlo/montecarlo.component';
+import { InventariosComponent } from './inventarios/inventarios.component';
+import { LineaesperaComponent } from './lineaespera/lineaespera.component';
+
 
 
 
@@ -40,7 +43,10 @@ import { MontecarloComponent } from './montecarlo/montecarlo.component';
     SuavizamientoComponent,
     RegresionlinealComponent,
     RegresioncuadraticaComponent,
-    MontecarloComponent
+    MontecarloComponent,
+    InventariosComponent,
+    LineaesperaComponent,
+
 
   ],
   imports: [
@@ -62,6 +68,8 @@ import { MontecarloComponent } from './montecarlo/montecarlo.component';
       { path: 'regresionlineal', component: RegresionlinealComponent },
       { path: 'regresioncuadratica', component: RegresioncuadraticaComponent },
       { path: 'montecarlo', component: MontecarloComponent },
+      { path: 'inventarios', component: InventariosComponent },
+      { path: 'lineasespera', component: LineaesperaComponent }
     ]),
     MatDividerModule,
     MatMenuModule,
